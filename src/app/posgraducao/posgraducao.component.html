@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Escolha o seu curso de graduação</h2>
+            <div id="sobre">
+                <p>Os cursos de graduação Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates nobis ut, ea sequi quo culpa libero exercitationem dicta nulla autem quod id. Dicta, debitis atque.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <swiper [config]="config">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let curso of arrCursos">
+                        <img [src]=curso.src [alt]=curso.alt />
+                        <h5>{{curso.name}}</h5>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </swiper>
+        </div>
+        <div class="col-md-6 mt-5">
+            <h3 class="d-block mb-3">Na falta de ideias, usei mesmos cursos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem velit neque culpa distinctio vel mollitia incidunt ullam quis fugiat! Molestias, dignissimos. Vel odit maiores deleniti ipsum consectetur vero, doloribus quod ducimus iure expedita enim accusamus magnam excepturi at quam? Praesentium sint eveniet repudiandae, similique, aut impedit ratione, libero nesciunt amet at a. Tempora suscipit aliquid fugit ipsam corporis illum sit, magni quibusdam facere odit magnam rem reiciendis nihil maxime, similique sunt quo. Earum nam amet molestias? Dolor excepturi pariatur enim quae alias iste necessitatibus, placeat, maxime laudantium perferendis consequuntur. Dolorum corrupti fugit dignissimos tempore id, rerum voluptatibus cumque maxime!</p>
+        </div>
+    </div>
+</div>
